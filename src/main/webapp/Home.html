@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<title>Banking</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<style>
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: 'Times New Roman', Times, serif;
+	background-color: rgb(255, 222, 232);
+}
+
+.container {
+	max-width: 500px;
+	margin: 50px auto;
+	padding: 20px;
+	background-color: #fef3f3;
+	border-radius: 5px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.button-container {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+}
+
+h1 {
+	text-align: center;
+	margin-bottom: 10px;
+}
+
+.login-button, .signup-button, .AdminLogIn {
+	text-decoration: none;
+	padding: 10px 20px;
+	background-color: rgb(233, 251, 120);
+	margin-bottom: 10px;
+	border-radius: 10px;
+	font-weight: bold;
+	color: rgb(228, 44, 20);
+}
+
+.login-button:hover, .signup-button:hover, .AdminLogIn:hover {
+	color: rgb(161, 2, 7);
+	background-color: rgb(231, 250, 61);
+}
+</style>
+
+<body>
+	<div class="container">
+		<h1>Welcome to Banking</h1>
+		<div class="button-container">
+			<a href="LogIn.html" class="login-button">Login</a> <a
+				href="SignUp.html" class="signup-button">Sign Up</a> <a
+				href="AdminLogIn.html" class="AdminLogIn">Login As Admin</a>
+		</div>
+	</div>
+</body>
+
+</html>

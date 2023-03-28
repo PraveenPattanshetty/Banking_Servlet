@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<style>
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: 'Times New Roman', Times, serif;
+	background-color: rgb(247, 255, 233);
+}
+
+.container {
+	max-width: 500px;
+	margin: 50px auto;
+	padding: 20px;
+	background-color: #f0faff;
+	border-radius: 5px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.button-container {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+}
+
+h1 {
+	text-align: center;
+	margin-bottom: 10px;
+}
+
+.login-button, .signup-button, .AdminLogIn {
+	text-decoration: none;
+	padding: 10px 20px;
+	background-color: rgb(233, 251, 120);
+	margin-bottom: 10px;
+	border-radius: 10px;
+	font-weight: bold;
+	color: rgb(228, 44, 20);
+}
+
+.login-button:hover, .signup-button:hover, .AdminLogIn:hover {
+	color: rgb(161, 2, 7);
+	background-color: rgb(231, 250, 61);
+}
+</style>
+<body>
+	<div class="container">
+		<h1>WELCOME</h1>
+		<h2>CUSTOMER HOME</h2>
+		<div class="btn-container">
+			<a href="SelectType.jsp"><button class="btn">Create Bank
+					Account</button></a> <a href="fetchactiveaccount"><button class="btn">Already
+					Have Account? Click Here</button></a> <a href="logout"><button class="btn">Logout</button></a>
+		</div>
+	</div>
+</body>
+</html>

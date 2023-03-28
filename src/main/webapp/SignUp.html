@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<title>Banking Sign Up</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<style>
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: Arial, sans-serif;
+	background-color: #ffecec;
+}
+
+.container {
+	max-width: 500px;
+	margin: 50px auto;
+	padding: 20px;
+	background-color: #ffffff;
+	border-radius: 5px;
+	box-shadow: 0 0 10px rgba(41, 40, 40, 0.2);
+}
+
+h1 {
+	text-align: center;
+	margin-bottom: 20px;
+	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+form {
+	display: flex;
+	flex-direction: column;
+}
+
+label {
+	font-weight: bold;
+	margin-bottom: 5px;
+}
+
+input, select {
+	padding: 10px;
+	margin-bottom: 10px;
+	border-radius: 5px;
+	border: none;
+}
+
+button {
+	padding: 10px;
+	border-radius: 5px;
+	border: none;
+	background-color: #4CAF50;
+	color: #fff;
+	font-weight: bold;
+	cursor: pointer;
+}
+
+button:hover {
+	background-color: #3e8e41;
+}
+</style>
+
+<body>
+	<div class="container">
+		<h1>Banking Sign Up</h1>
+		<form action="customersignup" method="post">
+			<label for="name">Name</label> <input type="text" id="name"
+				name="name" placeholder="Enter your full name" required> <label
+				for="mobile">Mobile Number</label> <input type="tel" id="mobile"
+				name="mobile" placeholder="Enter your mobile number" required>
+
+			<label for="email">Email</label> <input type="email" id="email"
+				name="email" placeholder="Enter your email" required> <label
+				for="password">Password</label> <input type="password" id="password"
+				name="password" placeholder="Enter your password" required>
+
+			<label for="gender">Gender</label> <select id="gender" name="gender"
+				required>
+				<option value="">--Select your gender--</option>
+				<option value="male">Male</option>
+				<option value="female">Female</option>
+				<option value="other">Other</option>
+			</select> <label for="dob">Date of Birth</label> <input type="date" id="dob"
+				name="dob" required>
+			<button type="submit">Sign Up</button>
+		</form>
+	</div>
+	</div>
+</body>
+
+</html>

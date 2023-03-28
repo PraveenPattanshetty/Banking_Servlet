@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<style>
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background-color: rgb(243, 254, 254);
+	font-family: 'Times New Roman', Times, serif;
+}
+
+.container {
+	max-width: 500px;
+	margin: 50px auto;
+	padding: 20px;
+	border-radius: 10px;
+	background-color: rgb(254, 228, 228);
+	box-shadow: 0 0 100px rgb(252, 197, 197);
+}
+
+h1 {
+	text-align: center;
+	margin-bottom: 10px;
+}
+
+.btn {
+	margin-right: 20px;
+	/* margin-bottom: 10px; */
+	background-color: rgb(255, 209, 209);
+	padding: 10px 20px;
+	border-radius: 10px;
+	font-weight: bold;
+	color: rgb(211, 6, 6);
+	cursor: pointer;
+}
+
+.btn:hover {
+	background-color: rgb(255, 158, 158);
+	color: aquamarine;
+}
+
+form {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	/* justify-content: center; */
+	/* width: 100%; */
+}
+
+.button {
+	display: flex;
+	/* flex-direction: column; */
+	flex-direction: rows;
+}
+
+input {
+	margin-bottom: 10px;
+	padding: 8px 20px;
+}
+
+#btn1 {
+	text-decoration: none;
+}
+
+#btn2 {
+	padding: 10px 23px;
+}
+</style>
+<body>
+	<!-- 
+	<h1>Admin Login</h1>
+	<div class=container>
+		<form action="adminlogin" method="post">
+
+			<input type="text" name="email" placeholder="Enter Email"> <input
+				type="password" name="password" placeholder="Enter Password">
+			<button type="submit">Submit</button>
+			<button type="reset">Cancel</button>
+		</form>
+		<a href="Home.html"><button>Home</button></a>
+	</div>
+	 -->
+	<div class=container>
+		<h1>Admin Login</h1>
+		<form class="form" action="adminlogin" method="post">
+			<input type="text" name="email" placeholder="Enter Email" required>
+			<input type="password" name="password" placeholder="Enter Password"
+				required>
+			<div class="button">
+				<button type="submit" class="btn">Submit</button>
+				<button type="reset" class="btn">Cancel</button>
+				<a href="Home.html" id="btn1"><button type="button" id="btn2" class="btn">Home</button></a>
+			</div>
+		</form>
+	</div>
+</body>
+</html>

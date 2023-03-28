@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<title>Banking Login</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<style>
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: Arial, sans-serif;
+	background-color: #e1f9b8;
+}
+
+.container {
+	max-width: 500px;
+	margin: 80px auto 10px;
+	padding: 20px;
+	background-color: #fff;
+	border-radius: 5px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+	text-align: center;
+	margin-bottom: 20px;
+	font-family: 'Times New Roman', Times, serif;
+}
+
+form {
+	display: flex;
+	flex-direction: column;
+}
+
+label {
+	font-weight: bold;
+	margin-bottom: 5px;
+}
+
+input {
+	padding: 10px;
+	margin-bottom: 10px;
+	border-radius: 5px;
+	border: none;
+}
+
+button {
+	padding: 10px;
+	border-radius: 5px;
+	border: none;
+	background-color: #4CAF50;
+	color: #fff;
+	font-weight: bold;
+	cursor: pointer;
+}
+
+button:hover {
+	background-color: #3e8e41;
+}
+
+/* .forgot-container {
+		margin-top: 10px auto;
+	} */
+.Home {
+	display: block;
+	width: 33%;
+	margin: 10px auto;
+}
+
+.signup-container {
+	display: block;
+	width: 45%;
+	margin: 5px auto;
+	padding: 1px 45px;
+	color: rgb(151, 165, 174);
+	font-weight: bold;
+	text-decoration: none;
+	/* border: 2px solid green;*/
+}
+
+#FPass {
+	display: block;
+	width: 33%;
+	margin: auto;
+	padding: 0px 60px;
+	text-decoration: none;
+	font-family: Arial, sans-serif;
+	/*	border: 2px solid red; */
+}
+
+div a {
+	margin: auto;
+	text-decoration: none;
+	color: rgb(4, 211, 214);
+}
+</style>
+
+
+<body>
+	<div class="container">
+		<h1>Banking Login</h1>
+		<form action="Customerlogin" method="post">
+			<label for="username">Customer ID</label> <input type="tel"
+				id="username" name="cust_id" placeholder="Enter your Customer ID"
+				required pattern="[0-9]{8}"> 
+				<label for="password">Password</label> <input
+				type="password" id="password" name="password"
+				placeholder="Enter your password" required>
+
+			<button type="submit">Login</button>
+		</form>
+		<a href="Home.html">
+			<button class="Home" type="submit">Home</button>
+		</a>
+	</div>
+	<div class="forgot-container">
+		<a id="FPass" href="">Forgot Password</a>
+	</div>
+	<div class="signup-container">
+		<p>
+			Don't have an account? <a href="SignUp.html">Sign up</a>
+		</p>
+	</div>
+</body>
+
+</html>
