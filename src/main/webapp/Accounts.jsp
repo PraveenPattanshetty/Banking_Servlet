@@ -3,11 +3,52 @@
 <%@page import="java.util.List"%>
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
 	pageEncoding="ISO-8859-1"%>
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!DOCTYPE html>
 <html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<meta charset="UTF-8">
 <title>Select Account</title>
+<style>
+body {
+	font-family: Arial, sans-serif;
+	background-color: #f2f2f2;
+}
+
+h1 {
+	font-size: 32px;
+	margin-top: 50px;
+	margin-bottom: 20px; <%--
+	text-align: center;
+	--%>
+}
+
+button {
+	margin: auto;
+}
+
+button {
+	font-size: 18px;
+	padding: 10px;
+	background-color: #7c4951;
+	color: white;
+	border: none;
+	cursor: pointer;
+	border-radius: 5px;
+	margin-bottom: 10px;
+}
+
+button:hover {
+	background-color: #3e8e41;
+}
+
+a {
+	text-decoration: none;
+}
+
+.back-button {
+	margin-top: 30px;
+}
+</style>
 </head>
 <body>
 	<%
@@ -30,17 +71,13 @@
 		for (BankAccount account : list) {
 	%>
 	<a href="setaccount?accno=<%=account.getAccno()%>"><button><%=account.getAccno()%></button></a>
-	<br>
-	<br>
 	<%
 		}
 	%>
 	<%
 		}
 	%>
-	<br>
-	<br>
-	<a href="CustomerHome.html"><button>Back</button></a>
+	<a href="CustomerHome.html"><button class="back-button">Back</button></a>
 	<%
 		}
 	%>

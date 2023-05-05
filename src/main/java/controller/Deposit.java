@@ -30,6 +30,7 @@ public class Deposit extends HttpServlet {
 
 			long accno = (Long) req.getSession().getAttribute("accno");
 			BankDAO bankDAO = new BankDAO();
+			
 			BankAccount account = bankDAO.find(accno);
 			account.setAmount(account.getAmount() + amt);
 

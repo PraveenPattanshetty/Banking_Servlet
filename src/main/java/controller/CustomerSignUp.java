@@ -26,7 +26,7 @@ public class CustomerSignUp extends HttpServlet {
 		// String Password = req.getParameter("password");
 		// String Gender = req.getParameter("gender");
 		String Email = req.getParameter("email");
-		String DOB = req.getParameter("dob");
+//		String DOB = req.getParameter("dob");
 
 		Long Mobile = Long.parseLong(req.getParameter("mobile"));
 

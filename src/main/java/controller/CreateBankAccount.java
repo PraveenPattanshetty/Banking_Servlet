@@ -46,7 +46,7 @@ public class CreateBankAccount extends HttpServlet {
 			bankDAO.save(account);
 
 			// List<BankAccount> list2 = new ArrayList<BankAccount>();
-			
+
 			// list2.add(account);
 			// customer.setAccounts(list2);
 
